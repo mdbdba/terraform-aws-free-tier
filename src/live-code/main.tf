@@ -7,7 +7,8 @@ terraform {
   backend "s3" {
     bucket = "mdbstate-terraform-backend"
     key    = "/terraform/ec2/terraform.tfstate"
-    region = "us-west-2"}
+    region = var.region
+    }
 }
 
 module "vpc" {
