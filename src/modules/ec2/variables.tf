@@ -26,7 +26,6 @@ variable "ec2_ami" {
   description = "The Amazon Machine Image"
   type        = string
   default     = "ami-02701bcdc5509e57b" # Ubuntu 18.04 LTS (64-bit x86)  Free Tier eligible
-  # "ami-04b9e92b5572fa0d1" # Ubuntu 18.04 LTS (64-bit x86)  Free Tier eligible
 }
 
 
