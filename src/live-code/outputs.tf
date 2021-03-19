@@ -6,7 +6,7 @@ resource "local_file" "ansible_inventory" {
 ${module.ec2.ec2_public_ip}
 _EOF
 }
-
+/*
 resource "aws_s3_bucket_object" "file_upload" {
   bucket = "mdbstate-terraform-backend"
   key    = "ansible/inventory/ec2_example_ubuntu_hosts.ini"
@@ -17,3 +17,4 @@ resource "aws_s3_bucket_object" "file_upload" {
     local_file.ansible_inventory,
   ]
 }
+*/
