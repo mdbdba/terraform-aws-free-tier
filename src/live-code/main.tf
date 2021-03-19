@@ -1,16 +1,3 @@
-provider "aws" {
-  profile = var.profile
-  region  = var.region
-}
-
-terraform {
-  backend "s3" {
-    bucket = "mdbstate-terraform-backend"
-    key    = "terraform/ec2_example/terraform.tfstate"
-    region = "us-west-2"
-    }
-}
-
 module "vpc" {
   source = "../modules/vpc"
   vpc_name = "ec2_vpc_name"
